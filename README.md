@@ -11,6 +11,13 @@ O **Organizador Shell** é um script avançado projetado para organizar arquivos
   - **Compactados**: zip, tar, gz, bz2, 7z
   - **Outros**: Arquivos que não se enquadram nas categorias acima.
 
+- **Organização por Tipo**: O script organiza arquivos automaticamente de acordo com os seguintes tipos:
+  - **Imagens**: Organize arquivos de imagens em formatos como `.jpg`, `.png`, etc., dentro de uma pasta dedicada.
+  - **Vídeos**: Arquivos de vídeo, como `.mp4`, `.avi`, são movidos para o diretório `Vídeos`.
+  - **Documentos**: Arquivos de texto, planilhas, apresentações, etc., são movidos para o diretório `Documentos`.
+  - **Compactados**: Arquivos compactados como `.zip`, `.tar.gz`, etc., são movidos para o diretório `Compactados`.
+  - **Outros**: Arquivos que não se encaixam nas categorias anteriores são movidos para o diretório `Outros`.
+
 - Oferece duas opções de destino:
   - **Local**: Mover arquivos organizados para um diretório de destino local.
   - **Remoto**: Transferir arquivos organizados para um servidor remoto, usando SSH.
@@ -36,7 +43,7 @@ O script utiliza a seguinte sintaxe:
 - `-k <token>`: Caminho para o arquivo de token SSH (opcional para acesso remoto com chave SSH).
 - `-h`: Exibe a ajuda e opções disponíveis.
 
-### Exemplo de Uso
+### Exemplos de Uso
 
 #### Organização Local
 
@@ -66,8 +73,8 @@ O script move os arquivos do diretório de origem para subdiretórios no destino
 
 1. **Imagens**: Todos os arquivos com extensões de imagem são movidos para o subdiretório `Imagens`.
 2. **Vídeos**: Arquivos de vídeo são movidos para o subdiretório `Vídeos`.
-3. **Documentos**: Arquivos de documentos são movidos para o subdiretório `Documentos`.
-4. **Compactados**: Arquivos compactados são movidos para o subdiretório `Compactados`.
+3. **Documentos**: Arquivos de documentos (PDF, DOC, TXT, etc.) são movidos para o subdiretório `Documentos`.
+4. **Compactados**: Arquivos compactados (ZIP, TAR, etc.) são movidos para o subdiretório `Compactados`.
 5. **Outros**: Arquivos que não se encaixam em nenhuma das categorias são movidos para o subdiretório `Outros`.
 
 ### Validação de Entrada
