@@ -21,6 +21,12 @@ function exibir_ajuda() {
     echo "  - Vídeos: mp4, mkv, avi, mov, wmv, flv, webm"
     echo "  - Documentos: pdf, doc, docx, xls, xlsx, ppt, pptx, txt"
     echo "  - Compactados: zip, tar, gz, bz2, 7z"
+    echo "  - Outros: Arquivos não classificados nas categorias acima."
+    echo "\nExemplos de uso:"
+    echo "  1. Para organizar arquivos localmente:"
+    echo "     ./organizador.sh -d /caminho/para/origem -t local -l /caminho/para/destino"
+    echo "  2. Para transferir arquivos organizados para um servidor remoto:"
+    echo "     ./organizador.sh -d /caminho/para/origem -t remoto -r <ip_remoto> -u <usuario_remoto> -p <senha_remota>"
     exit 0
 }
 
